@@ -27,7 +27,7 @@ namespace CardGames
 
 			if (SwinGame.KeyTyped (KeyCode.vk_SPACE))
 			{
-				myGame.FlipNextCard ();
+				myGame.Start ();
 			}
 		}
 
@@ -91,7 +91,6 @@ namespace CardGames
             
 			// Create the game!
 			Snap myGame = new Snap ();
-
             //Run the game loop
             while(false == SwinGame.WindowCloseRequested())
             {
